@@ -30,7 +30,7 @@ const SignUp = ({ signUpStart }) => {
     const handleChange = (e) => {
         const { name, value } = e.target
 
-        setUserCredentials({ [name]: value })
+        setUserCredentials({ ...userCredentials, [name]: value })
     }
 
     return (
